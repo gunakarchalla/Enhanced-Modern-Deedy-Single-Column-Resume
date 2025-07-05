@@ -30,6 +30,9 @@
 \RequirePackage{raleway-font}
 % make underlying constants: credits to Alex Beattie for noticing and suggesting fix
 \RequirePackage{ulem}
+\RequirePackage{multirow}
+\RequirePackage{float}
+\RequirePackage{eso-pic}
 %--------------------------------------------------------------
 % Reformatting default sections
 % section
@@ -166,4 +169,3 @@
 % Align Sections
 \let\oldSection\section
 \renewcommand{\section}[1]{\oldSection{#1}\raggedright}
-\renewcommand{\underline}[1]{\uline{#1}}

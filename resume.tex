@@ -32,15 +32,38 @@
 %--------------------------------------------------------------
 %     Profile
 %--------------------------------------------------------------
-\newcommand{\yourName}{First Last}
+\newcommand{\yourName}{\latoLight{GUNAKAR} \latoBold{CHALLA}}
 % How you want it to show up on the resume
-\newcommand{\yourWebsite}{abdullaharif.tech}
-% vs how you want it to show up. If it's you can just replace "\yourWebsiteLink" with "yourWebsite"
-\newcommand{\yourWebsiteLink}{https://abdullaharif.tech}
-\newcommand{\yourEmail}{someEmail@edu.com}
-\newcommand{\yourPhone}{1-234-567-890}
-\newcommand{\githubUserName}{aarif123456}
-\newcommand{\linkedInUserName}{abdullaharif98}
+\newcommand{\yourWebsite}{gunakarchalla.github.io/gunakarchalla}
+\newcommand{\researchGateUserName}{Gunakar-Challa}
+% vs how you want it to show up. If it's the same you can just replace "\yourWebsiteLink" with "yourWebsite"
+\newcommand{\yourWebsiteLink}{https://gunakarchalla.github.io/gunakarchalla/}
+\newcommand{\yourEmail}{gunakarchalla@gmail.com}
+\newcommand{\yourPhone}{+41-795557687}
+\newcommand{\githubUserName}{gunakarchalla}
+\newcommand{\linkedInUserName}{gunakarchalla}
+
+
+\AddToShipoutPictureBG*{
+  \put(\textwidth/2,\textheight-15){\includegraphics[width=2cm, height=2cm, H]{LinkedIn Dp Circular Crop.png} } % (x, y) in points
+}
+
+    \alignProfileTable
+\begin{tabular*}{\textwidth}{l @{\extracolsep{\fill}}r}
+    \ralewayBold{\href{\yourWebsiteLink}{\LARGE \yourName}}  &
+   \href{https://www.linkedin.com/in/\linkedInUserName}{\textbf{LinkedIn : }/\linkedInUserName}
+    \\
+     \textbf{ Mobile :} \href{tel:\yourPhone}{\yourPhone} &
+   \href{https://github.com/\githubUserName}{\textbf{GitHub : }/\githubUserName}
+    \\
+     \textbf{ Email :} \href{mailto:\yourEmail}{\yourEmail} &
+    % \textbf{Website :} \href{\yourWebsiteLink}{\yourWebsite}
+    \href{https://www.researchgate.net/profile/\researchGateUserName}{\textbf{ResearchGate : }/\researchGateUserName}
+    \\
+\end{tabular*}
+\vspace{0.2cm}
+\hline
+\sectionsep
 
 % An alternate profile section 
 % \alignProfileTable
@@ -53,78 +76,150 @@
 %     \\
 %     \href{https://www.linkedin.com/in/\linkedInUserName}{LinkedIn://\linkedInUserName} & Website : \href{\yourWebsiteLink}{\yourWebsite}
 %     \\
+%     \hline
 % \end{tabular*}
 
-\begin{center}
-    \Huge \scshape \latoRegular{\yourName} \\ \vspace{1pt}
-    \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \yourPhone $|$ 
-    \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
-    \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
-    % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
-\end{center}
+% \begin{center}
+%     \Huge \scshape \yourName \\ \vspace{1pt}
+%     \small \href{mailto:\yourEmail}{\underline{\yourEmail}}  $|$  \href{tel:\yourPhone}{\underline{\yourPhone}} $|$ 
+%     \href{https://www.linkedin.com/in/\linkedInUserName}{\underline{linkedIn/\linkedInUserName}} $|$
+%     \href{https://github.com/\githubUserName}{\underline{github/\githubUserName}} 
+%     % $|$ \href{\yourWebsiteLink}{\underline{\yourWebsite}}
+% \end{center}
+% \hline
 
 %--------------------------------------------------------------
 %     Education
 %--------------------------------------------------------------
 \section{Education}
 % Put school first and degree second if your school is reputable
-\educationHeading{BSc. Honours Computer Science With Software Engineering Specialization}{University of Windsor}{Windsor, ON}{Jun 2021}
+\educationHeading{Master of Science in Computer Science}{University of Bern}{Bern, CH}{2024 - Present}
 
-\teacherAssistant{World Wide Web Information Systems Development}
+% \teacherAssistant{World Wide Web Information Systems Development}
 % \courseWork{Data Structures and Algorithms; Operating Systems;  Computer Security; Software Testing; Advanced Networking; Big Data Analytics}
-\sectionsep
-
+% \sectionsep
+\dotfill
 %--------------------------------------------------------------
 %     Experience
 %--------------------------------------------------------------
 \section{Work Experience}
-\resumeHeading{Amazon}{Software Development Engineer Intern}{Toronto, ON}{May 2020 – Aug 2020}
+\resumeHeading{University of Fribourg}{\underlinedLink{https://www.unifr.ch/inf/digits/en/group/team/gunakar-challa.html}{Unterassistent}}{Fribourg, CH}{Aug 2024 – Present}
 \begin{bullets}
-    \item Designed and implemented a dashboard using \textbf{React} and \textbf{TypeScript} to visualize data stored in \textbf{DynamoDB}, decreasing time to understand delivery driver work sessions by over 10 times.
+    \item Automated the generation of schemas and OAS 3.0 specification for existing express APIs in \underlinedLink{https://github.com/MM-AR}{MMAR}.
     %  \item Here is another bullet that I might choose to uncomment for some jobs
-    \item Ensured only authorized employees have access to the application by creating an \textbf{AWS Lambda@Edge} function to intercept and sign valid requests.
-    \item Devised and deployed the infrastructure in TypeScript through \textbf{AWS CDK}, then created efficient algorithms to process data from a custom \textbf{REST API}, so it could scale to handle millions of deliveries.
-    \item Setup a CI/CD pipeline and exceeded requirements in each stage, which lead to the application being pushed to production.
+    \item Researched and implemented file upload functionality in MMAR.
+    \item Researched and implemented a \underlinedLink{https://github.com/gunakarchalla/Aurelia-2-Project-with-Aurelia-MDC-running-on-Vite}{POC} on migrating Aurelia MDC project from Webpack to Vite.
+    \item Added custom functions in VizRep(a domain specific language) to render GLTF and image files based on UUIDs of the files in MMAR.
+    \item Fixed various frontend and backend bugs in MMAR.
+    \item Designed multiple posters to explain MMAR project and topics like metamodeling, integrating AI into metamodeling, etc.\\
+    \textbf{    Contact:} \underlinedLink{mailto:hans-georg.fill@unifr.ch}{Prof. Dr. Hans-Georg Fill}, Professor (Department of Informatics)
 \end{bullets}
 \sectionsep
 
-\resumeHeading{University of Windsor}{Research Assistant (RA)}{Windsor, ON}{Feb 2020 - May 2020}
+\resumeHeading{LTIMindtree Ltd.}{Consultant - Package Implementation}{Hyderabad, IN}{ July 2021 - Jan 2024}
 \begin{bullets}
-    \item Developed a Personal Health Record (PHR) system in \textbf{\href{https://spring.io/}{Spring}} based on the theoretical model outlined in \underlinedLink{https://research.library.mun.ca/11920}{Mitu Kumar's thesis}.
-    \item Applied the \href{https://link.springer.com/chapter/10.1007/978-3-642-10838-9\_23}{mCP-ABE} encryption scheme using the \href{http://gas.dia.unisa.it/projects/jpbc/}{JPBC} library, so patients have fine-grained access control over their health records with the ability to instantly revoke access.
+    \item As a PI/PO developer, created multiple interfaces using REST, IDOC, SFTP, adapters in Carrier ANZ project.
+    \item Migrated the scenarios (moved the interfaces) from NW 7.5 SAP PI split stack system to Java only system in Clarios project.
+    \item As part of Clarios AMS team, monitored the existing interfaces and resolved several runtime issues.
+    \item As a Graduate Engineer Trainee, implemented a few interfaces using SAP Cloud Integration in Practice Unit.\\
+\textbf{    Contact:} \underlinedLink{mailto:pravin.vichare@ltimindtree.com}{Pravin Vichare}, Associate Director (SAP)
 \end{bullets}
 \sectionsep
 
-\resumeHeading{JoaTu}{Software Engineer Intern}{Montreal, QC}{Dec 2018 – May 2019}
-\begin{bullets}
-    \item Rewrote legacy \textbf{Django code} in \textbf{Ruby in Rails} and refactored it to make the system more extensible.
-    \item Created \textbf{UML} diagrams and documented where features were implemented, to make the codebase more maintainable.
-\end{bullets}
-\sectionsep
+% \resumeHeading{BHEL}{Project Intern}{}{Dec 2019 – Dec 2019}
+% \begin{bullets}
+%     \item Worked closely with web developers' team on internal Ladies Welfare Centre website.
+%     \item Assisted in all three layers of the architecture; created a few web pages, coded backend functions to transform \& send data to the database and modified a few of the tables in oracle database.
+% \end{bullets}
+% \sectionsep
+\dotfill
 
+%--------------------------------------------------------------
+%     Skills
+%--------------------------------------------------------------
+\section{Skills}
+% \begin{skillList}
+%     \singleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket, SQL}
+%     \\
+%     \singleItem{Web Development:}{React, JavaScript, TypeScript, HTML/CSS}
+%     \\
+%     \singleItem{Technology:}{Git, AWS, GCP, Azure, Docker, Unity, Apache, \LaTeX, MongoDB, DynamoDB, Neo4j}
+% \end{skillList}
+
+% A more concise alternate 
+\begin{skillList}
+    \doubleItem{Languages:}{Java, C++, Python, C, Typescript, Javascript, SQL}%
+    {Libraries \& Frameworks:}{Aurelia, Express, Flutter, PyTorch}
+    \\
+    \doubleItem{Tools:}{SAP PI/PO/CI, Postman, Swagger, ServiceNow, Jira }%
+    {Technologies:}{Git, AWS, Docker, ROS, Arduino, Markdown, \LaTeX}
+\end{skillList}
+
+% \sectionsep
+\dotfill
 %--------------------------------------------------------------
 %     Projects
 %--------------------------------------------------------------
 \section{Projects}
 
-\projectHeading{Automated Spear-Phisher}{https://github.com/Aarif123456/Fb-Twitter-gui}{Python, PySpark, Selenium, Apache, NLP, Big Data}
-A security research tool to send targeted spam messages on either Facebook or Twitter. The program analyzes the feed of its target to increase the effectiveness of the messages.\\
+\projectHeading{Parallel Mandelbrot Set Renderer}{https://github.com/gunakarchalla/Parallel-Mandelbrot-Set-Renderer}{Java}
+Modernized a legacy single-threaded Applet into a Java Swing application, introducing an ExecutorService thread-pool architecture for parallel Mandelbrot rendering.
+Devised tile-based workload partitioning and synchronization mechanisms that drove a ~3× performance boost on a quad-core CPU while preserving UI responsiveness.\\
 \sectionsep
   
-\projectHeading{Image Repository}{https://github.com/Aarif123456/image\_repository}{Java, PHP, React, TypeScript, Maven, GCP, MySQL}
-A full-stack image repository, where users can store their files. Created a GCP cloud function to implement \href{https://www.cs.utexas.edu/~bwaters/publications/papers/cp-abe.pdf}{CP-ABE} encryption and used it to ensure files are secure at rest.\\
+\projectHeading{Identification of insects and prediction of pesticides}{https://github.com/gunakarchalla/Identification-of-Insects-and-Pesticide-Recommendation-using-Deep-Learning}{Python, Dart(Flutter), PHP, SQL}
+Built an end-to-end AI-driven pest-management system that detects crop-damaging insects with YOLOv4 and recommends crop-safe pesticides via a Flutter app. Architected a serverless pipeline on UbiOps + PHP/MariaDB, cutting on-device compute needs to zero and achieving ≈95 \% mAP on nine insect classes. \\
+% \sectionsep
+\dotfill
+
+%--------------------------------------------------------------
+%     Achievements 
+%--------------------------------------------------------------
+\section{Achievements }
+
+% \projectHeadingWithDate{Conference Paper in AIP Conference Proceedings}{https://pubs.aip.org/aip/acp/article-abstract/3159/1/020020/3329811/Identification-of-insect-pests-and-prediction-of?redirectedFrom=fulltext
+% }{}{Jan 2025}
+% \begin{bullets}s
+%     \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
+% \sectionsep
+
+% \projectHeadingWithDate{Conference Paper in CEUR Workshop Proceedings}{https://ceur-ws.org/Vol-3849/poster-demo1.pdf
+% }{}{Dec 2024}
+% \begin{bullets}s
+%     \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
+% \sectionsep
+
+\Project{AWS Certified Solutions Architect Associate}{https://cp.certmetrics.com/amazon/en/public/verify/credential/357EHD510JF1143Q
+}
 \sectionsep
 
-\projectHeading{Biometric Dynamic Keystroke Spoofer}{https://github.com/Aarif123456/KeystrokeDynamicsSpoofer}{Python, Object-Oriented Design, CyberSecurity}
-A program that authenticates users based on their typing patterns. And a spoofer that uses the genetic algorithm to mimic the user's typing pattern.
+% \begin{bullets}
+%     \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
+
+
+\Project{Business Unit of the Year Award}{https://www.linkedin.com/in/gunakarchalla/overlay/1743464373673/single-media-viewer?type=DOCUMENT&profileId=ACoAAC17mwgBVB1-uXsGSvWBfsFOAC-MNz6WXGI&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6LMPmP4tSvG7%2Blhyw7VLFg%3D%3D
+}
+
+% \begin{bullets}
+%     \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
 \sectionsep
 
-\projectHeading{Distributed Key-Value store}{https://github.com/Aarif123456/Distributed-DB}{Java, Distributed System, Computer Networks, Concurrency}
-A distributed key-value store which automatically replicates data in the background while the user manages their data. Implemented a custom P2P protocol to maximize fault tolerance and scalability.\\
+\Project{Best Paper Award}{https://www.linkedin.com/in/gunakarchalla/overlay/1743463961928/single-media-viewer?type=DOCUMENT&profileId=ACoAAC17mwgBVB1-uXsGSvWBfsFOAC-MNz6WXGI&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3B6LMPmP4tSvG7%2Blhyw7VLFg%3D%3D
+}
 \sectionsep
 
-\projectHeading{War of Weebles}{https://github.com/Aarif123456/GoalOrientedBehaviour}{C\#, Unity, Concurrency, Artificial Intelligence}
-A capture-the-flag-styled shooting game composed of AI-controlled players. The agents change their goals based on various factors, such as their health, current weapon, their personality and what they see.\\
+\Project{State 4th Rank in 8th Intellectual Olympiad}{https://www.linkedin.com/in/gunakarchalla/details/honors/1751713639746/single-media-viewer?type=DOCUMENT&profileId=ACoAAC17mwgBVB1-uXsGSvWBfsFOAC-MNz6WXGI&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_honors_details%3BmMg7PRMhQViYjebA3OQOxg%3D%3Ds
+}
+\sectionsep
+
+
+% \begin{bullets}
+%     \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
+% \end{bullets}
 \sectionsep
 
 % Example using bullets and dates 
@@ -133,26 +228,4 @@ A capture-the-flag-styled shooting game composed of AI-controlled players. The a
     % \item A full-stack library management system, where users can manage books and holds on their accounts. Users can search the library\textquotesingle{}s catalogue, which has every book mentioned in the Harry Potter series. The system distinguishes between 4 users. For examples, librarians who can also check or return books on behalf of users.\\
 % \end{bullets}
 % \sectionsep
-  
-
-%--------------------------------------------------------------
-%     Skills
-%--------------------------------------------------------------
-\section{Skills}
-\begin{skillList}
-    \singleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket, SQL}
-    \\
-    \singleItem{Web Development:}{React, JavaScript, TypeScript, HTML/CSS}
-    \\
-    \singleItem{Technology:}{Git, AWS, GCP, Azure, Docker, Unity, Apache, \LaTeX, MongoDB, DynamoDB, Neo4j}
-\end{skillList}
-
-% A more concise alternate 
-% \begin{skillList}
-%     \doubleItem{Languages:}{Java, C++, Python, C\#, PHP, Prolog, Bash, C, Racket}%
-%     {Databases:}{SQL, MongoDB, Neo4j, DynamoDB}
-%     \\
-%     \doubleItem{Web Development:}{JavaScript, TypeScript, React, HTML/CSS}
-%     {Technology:}{Git, AWS, GCP, Azure, Docker, \LaTeX}%
-% \end{skillList}
 \end{document}

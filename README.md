@@ -34,17 +34,6 @@ Or simply upload the folder to **Overleaf** (XeLaTeX is pre-selected).
 
 ---
 
-## 🛠️ Customising
-
-| What you want | Where / How |
-|---------------|-------------|
-| **Photo** | Replace `profile.jpg` (≈600 px square). Adjust size/shape via `\photo[...]` in `resume.cls`. |
-| **Section dots** | Edit the `\sectionrule` definition (`resume.cls`). Change `densely dotted` to `solid` for a classic line. |
-| **Contact icons** | Comment or uncomment the `\addcontact` lines near the top of `resume.tex`. |
-| **ResearchGate link** | Uses the *academicons* package—remove the line if not needed. |
-
----
-
 ## 📁 Project Layout
 
 ```
